@@ -18,8 +18,6 @@
 ```python
 UAV-UGV-Co-Simulation-Relay
 ├── MATLAB_ws                                     # MATLAB 工作空间（控制中心）
-│   ├── matlab_msg_gen                            # ROS 2 自定义消息生成
-│   ├── px4_msgs                                  # PX4 消息定义
 │   └── Matlab_file                               # 核心控制脚本
 │       ├── Factory.m
 │       ├── Lab1_UAV-UAV.m                        # 场景A（无中继）

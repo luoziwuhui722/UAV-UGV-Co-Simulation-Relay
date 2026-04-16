@@ -158,17 +158,17 @@ ros2 launch navigation 1uav_2ugv.launch.py
 <font style="color:rgb(15, 17, 21);">此时 Gazebo 界面将显示工厂仿真环境，Rviz 显示无人车导航状态。</font>
 
 ### <font style="color:rgb(15, 17, 21);">4. 运行控制中心</font>
-<font style="color:rgb(15, 17, 21);">在 MATLAB 中打开</font><font style="color:rgb(15, 17, 21);"> </font>`<font style="color:rgb(15, 17, 21);">MATLAB_ws/Matlab_file/</font>`<font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">目录，根据需要选择运行脚本：</font>
+<font style="color:rgb(15, 17, 21);">在 MATLAB 中打开</font><font style="color:rgb(15, 17, 21);"> </font>`MATLAB_ws/Matlab_file`<font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">目录，根据需要选择运行脚本：</font>
 
 | <font style="color:rgb(15, 17, 21);">脚本文件</font> | <font style="color:rgb(15, 17, 21);">对应实验场景</font> | <font style="color:rgb(15, 17, 21);">说明</font> |
 | --- | --- | --- |
-| `<font style="color:rgb(15, 17, 21);">Lab1_UAV-UAV.m</font>` | <font style="color:rgb(15, 17, 21);">场景A（无中继）</font> | <font style="color:rgb(15, 17, 21);">无人机与基站直连，基准对照</font> |
-| `<font style="color:rgb(15, 17, 21);">Lab2_UGV1.m</font>` | <font style="color:rgb(15, 17, 21);">场景B1（固定中继-原材料区）</font> | <font style="color:rgb(15, 17, 21);">始终经 UGV1 中继</font> |
-| `<font style="color:rgb(15, 17, 21);">Lab2_UGV2.m</font>` | <font style="color:rgb(15, 17, 21);">场景B2（固定中继-加工区）</font> | <font style="color:rgb(15, 17, 21);">始终经 UGV2 中继</font> |
-| `<font style="color:rgb(15, 17, 21);">Lab3.m</font>` | **<font style="color:rgb(15, 17, 21);">场景C（动态中继）</font>** | <font style="color:rgb(15, 17, 21);">实时切换最优链路，核心策略</font> |
+| `Lab1_UAV-UAV.m` | <font style="color:rgb(15, 17, 21);">场景A（无中继）</font> | <font style="color:rgb(15, 17, 21);">无人机与基站直连，基准对照</font> |
+| `Lab2_UGV1.m` | <font style="color:rgb(15, 17, 21);">场景B1（固定中继-原材料区）</font> | <font style="color:rgb(15, 17, 21);">始终经 UGV1 中继</font> |
+| `Lab2_UGV2.m` | <font style="color:rgb(15, 17, 21);">场景B2（固定中继-加工区）</font> | <font style="color:rgb(15, 17, 21);">始终经 UGV2 中继</font> |
+| `Lab3.m` | **<font style="color:rgb(15, 17, 21);">场景C（动态中继）</font>** | <font style="color:rgb(15, 17, 21);">实时切换最优链路，核心策略</font> |
 
 
 ### <font style="color:rgb(15, 17, 21);">5. 观察实验与数据记录</font>
 + <font style="color:rgb(15, 17, 21);">仿真运行时，控制中心 MATLAB 命令窗口将实时打印当前链路选择、SINR 值及飞行阶段。</font>
-+ <font style="color:rgb(15, 17, 21);">实验数据自动保存至</font><font style="color:rgb(15, 17, 21);"> </font>`<font style="color:rgb(15, 17, 21);">test.xlsx</font>`<font style="color:rgb(15, 17, 21);">（Lab3 场景），包含时间戳、SINR、误码率、延迟等指标。</font>
++ <font style="color:rgb(15, 17, 21);">实验数据自动保存至</font><font style="color:rgb(15, 17, 21);"> </font>`test.xlsx`<font style="color:rgb(15, 17, 21);">（Lab3 场景），包含时间戳、SINR、误码率、延迟等指标。</font>
 + <font style="color:rgb(15, 17, 21);">可在 RViz 或 Gazebo 中观察机器人运动轨迹与中继切换行为。</font>
